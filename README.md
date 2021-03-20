@@ -73,7 +73,7 @@ observer.unobserve(target)
 
     在样式或者类名改变之后的回调
 
-  #### Returns [AttributesObserve]
+  #### Returns [AttributesObserve](https://github.com/robertpanvip/attributes-observe/blob/cd9940a/src/AttributesObserve.ts#L223)
 
 ### unobserve
 
