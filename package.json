@@ -1,7 +1,7 @@
 {
     "name": "attributes-observe",
-    "version": "1.0.1",
-    "description": "使display=none、visibility等支持css渐变",
+    "version": "1.0.0",
+    "description": "Observe the DOM property change and injection condition to determine whether to modify the property",
     "main": "dist/attributes-observe.min",
     "module": "lib/AttributesObserve.js",
     "typings": "lib/AttributesObserve.d.ts",
@@ -15,14 +15,19 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com/robertpanvip/enable-transition.git"
+        "url": "git@github.com/robertpanvip/attributes-observe.git"
+    },
+    "publishConfig": {
+        "registry":"https://github.com/robertpanvip/attributes-observe.git"
     },
     "bugs": {
-        "url": "https://github.com/robertpanvip/enable-transition/issues"
+        "url": "https://github.com/robertpanvip/attributes-observe/issues"
     },
     "sideEffects": false,
     "keywords": [
-        "transition"
+        "observe",
+        "attributes",
+        "DOM property"
     ],
     "files": [
         "dist",
@@ -99,12 +104,6 @@
         "webpack-cli": "^3.3.12",
         "webpack-dev-server": "^3.11.0",
         "webpackbar": "^4.0.0",
-        "@babel/runtime-corejs3": "^7.11.2"
-    },
-    "dependencies": {
-    },
-    "peerDependencies": {
-        "react": "*",
-        "react-dom": "*"
+        "@babel/runtime-corejs3": "^7.11.2",
     }
 }
