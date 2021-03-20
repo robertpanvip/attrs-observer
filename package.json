@@ -16,13 +16,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com/robertpanvip/attributes-observe.git"
+    "url": "git@github.com/robertpanvip/attrs-observer.git"
   },
   "publishConfig": {
-    "registry": "https://github.com/robertpanvip/attributes-observe.git"
+    "registry": "https://github.com/robertpanvip/attrs-observer.git"
   },
   "bugs": {
-    "url": "https://github.com/robertpanvip/attributes-observe/issues"
+    "url": "https://github.com/robertpanvip/attrs-observer/issues"
   },
   "sideEffects": false,
   "keywords": [
