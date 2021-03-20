@@ -2,6 +2,8 @@
 ``` javascript
 npm install attributes-observe
 ```
+🖥 **API**
+[AttributesObserve](./docs/classes/attributesobserve.html)
 🔨 **Usage**
 ``` javascript
 const target=document.querySelector('div')

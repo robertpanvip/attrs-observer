@@ -9,7 +9,7 @@ class Test extends React.PureComponent {
         display: 'none',
         height: 100
     };
-    ref = React.createRef<HTMLElement>();
+    ref = React.createRef<HTMLDivElement>();
 
     /**
      *

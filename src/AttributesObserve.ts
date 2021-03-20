@@ -188,9 +188,9 @@ export class AttributesObserve {
 
     /**
      *开始观察
-     * @param target
-     * @param preHook
-     * @param afterHook
+     * @param target 目标对象
+     * @param preHook 在样式或者类名改变之前的回调 ps 如果返回true 那么样式或者类名就不会变
+     * @param afterHook 在样式或者类名改变之后的回调
      */
     observe(
         target: HTMLElement,
@@ -218,7 +218,7 @@ export class AttributesObserve {
 
     /**
      * 解除观察
-     * @param target
+     * @param target 目标对象
      */
     unobserve(target: HTMLElement):boolean {
         if (!this.targets.has(target)) {
