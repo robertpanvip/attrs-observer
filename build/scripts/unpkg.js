@@ -25,7 +25,7 @@ All rights reserved.
         })
     ];
     const compiler = webpack({
-        entry: '../../src/AttributesObserve.ts',
+        entry: '../../src/AttrsObserver.ts',
         output: {
             path: path.join(__dirname, '../../dist'),
             filename: name,

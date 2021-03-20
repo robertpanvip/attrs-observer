@@ -1,10 +1,10 @@
 {
-  "name": "attributes-observe",
+  "name": "attrs-observer",
   "version": "1.0.0",
   "description": "Observe the DOM property change and injection condition to determine whether to modify the property",
-  "main": "dist/attributes-observe.min",
-  "module": "lib/AttributesObserve.js",
-  "typings": "lib/AttributesObserve.d.ts",
+  "main": "dist/attrs-observer.min",
+  "module": "lib/AttrsObserver.js",
+  "typings": "lib/AttrsObserver.d.ts",
   "scripts": {
     "test": "jest --colors -u --coverage",
     "lint": "eslint src --quiet",
@@ -12,7 +12,7 @@
     "build": "cd build/scripts &&node index.js compile",
     "unpkg": "cd build/scripts &&node index.js unpkg",
     "publish": "cd build/scripts &&node index.js publish",
-    "doc": "typedoc src/AttributesObserve.ts"
+    "doc": "typedoc src/AttrsObserver.ts"
   },
   "repository": {
     "type": "git",

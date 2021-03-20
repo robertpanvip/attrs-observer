@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>attributes-observe</title>
-	<meta name="description" content="Documentation for attributes-observe">
+	<title>attrs-observer</title>
+	<meta name="description" content="Documentation for attrs-observer">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<script async src="assets/js/search.js" id="search-script"></script>
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">attributes-observe</a>
+					<a href="index.html" class="title">attrs-observer</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -50,7 +50,7 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<h1>attributes-observe</h1>
+			<h1>attrs-observer</h1>
 		</div>
 	</div>
 </header>
@@ -63,7 +63,7 @@
 </code></pre>
 				<p>🔨 <strong>Usage</strong></p>
 				<pre><code class="language-javascript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">target</span><span style="color: #000000">=</span><span style="color: #001080">document</span><span style="color: #000000">.</span><span style="color: #795E26">querySelector</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;div&#039;</span><span style="color: #000000">)</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">observer</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">AttributesObserve</span><span style="color: #000000">();</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">observer</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">AttrsObserver</span><span style="color: #000000">();</span>
 <span style="color: #001080">observer</span><span style="color: #000000">.</span><span style="color: #795E26">observe</span><span style="color: #000000">(</span><span style="color: #001080">target</span><span style="color: #000000">,</span>
 <span style="color: #000000">            (</span><span style="color: #001080">target</span><span style="color: #000000">, </span><span style="color: #001080">from</span><span style="color: #000000">, </span><span style="color: #001080">to</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">                </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">target</span><span style="color: #000000">, </span><span style="color: #001080">from</span><span style="color: #000000">, </span><span style="color: #001080">to</span><span style="color: #000000">)</span>
@@ -77,6 +77,120 @@
 <span style="color: #001080">observer</span><span style="color: #000000">.</span><span style="color: #795E26">unobserve</span><span style="color: #000000">(</span><span style="color: #001080">target</span><span style="color: #000000">)</span>
 <span style="color: #008000">//todo 这时候修改 style 或者calss 就不会被检查到了</span>
 </code></pre>
+				<p>🖥 <strong>API</strong></p>
+				<a href="#class-attrsobserver" id="class-attrsobserver" style="color: inherit; text-decoration: none;">
+					<h1>Class AttrsObserver</h1>
+				</a>
+				<a href="#hierarchy" id="hierarchy" style="color: inherit; text-decoration: none;">
+					<h3>Hierarchy</h3>
+				</a>
+				<ul>
+					<li>AttrsObserver</li>
+				</ul>
+				<a href="#index" id="index" style="color: inherit; text-decoration: none;">
+					<h2>Index</h2>
+				</a>
+				<a href="#constructors" id="constructors" style="color: inherit; text-decoration: none;">
+					<h3>Constructors</h3>
+				</a>
+				<ul>
+					<li><a href="AttrsObserver.html#constructor">constructor</a></li>
+				</ul>
+				<a href="#properties" id="properties" style="color: inherit; text-decoration: none;">
+					<h3>Properties</h3>
+				</a>
+				<ul>
+					<li><a href="AttrsObserver.html#targets">targets</a></li>
+				</ul>
+				<a href="#methods" id="methods" style="color: inherit; text-decoration: none;">
+					<h3>Methods</h3>
+				</a>
+				<ul>
+					<li><a href="AttrsObserver.html#observe">observe</a></li>
+					<li><a href="AttrsObserver.html#unobserve">unobserve</a></li>
+				</ul>
+				<a href="#constructors-1" id="constructors-1" style="color: inherit; text-decoration: none;">
+					<h2>Constructors</h2>
+				</a>
+				<a href="#constructor" id="constructor" style="color: inherit; text-decoration: none;">
+					<h3>constructor</h3>
+				</a>
+				<ul>
+					<li><p>new AttrsObserver(): <a href="AttrsObserver.html">AttrsObserver</a></p>
+					</li>
+					<li>
+						<a href="#returns-attrsobserver" id="returns-attrsobserver" style="color: inherit; text-decoration: none;">
+							<h4>Returns <a href="AttrsObserver.html">AttrsObserver</a></h4>
+						</a>
+					</li>
+				</ul>
+				<a href="#methods-1" id="methods-1" style="color: inherit; text-decoration: none;">
+					<h2>Methods</h2>
+				</a>
+				<a href="#observe" id="observe" style="color: inherit; text-decoration: none;">
+					<h3>observe</h3>
+				</a>
+				<ul>
+					<li><p>observe(target: HTMLElement, preHook: Hook, afterHook: Hook): <a href="AttrsObserver.html">AttrsObserver</a></p>
+					</li>
+					<li><ul>
+							<li>Defined in [AttrsObserver.ts:195]</li>
+						</ul>
+						<p>开始观察</p>
+						<a href="#parameters" id="parameters" style="color: inherit; text-decoration: none;">
+							<h4>Parameters</h4>
+						</a>
+						<ul>
+							<li>
+								<a href="#target-htmlelement" id="target-htmlelement" style="color: inherit; text-decoration: none;">
+									<h5>target: HTMLElement</h5>
+								</a>
+								<p>目标对象</p>
+							</li>
+							<li>
+								<a href="#prehook-hook" id="prehook-hook" style="color: inherit; text-decoration: none;">
+									<h5>preHook: Hook</h5>
+								</a>
+								<p>在样式或者类名改变之前的回调 ps 如果返回 true 那么样式或者类名就不会变</p>
+							</li>
+							<li>
+								<a href="#afterhook-hook" id="afterhook-hook" style="color: inherit; text-decoration: none;">
+									<h5>afterHook: Hook</h5>
+								</a>
+								<p>在样式或者类名改变之后的回调</p>
+							</li>
+						</ul>
+						<a href="#returns-attrsobserver-1" id="returns-attrsobserver-1" style="color: inherit; text-decoration: none;">
+							<h4>Returns <a href="https://github.com/robertpanvip/attributes-observe/blob/cd9940a/src/AttrsObserver.ts#L223">AttrsObserver</a></h4>
+						</a>
+					</li>
+				</ul>
+				<a href="#unobserve" id="unobserve" style="color: inherit; text-decoration: none;">
+					<h3>unobserve</h3>
+				</a>
+				<ul>
+					<li><p>unobserve(target: HTMLElement): boolean</p>
+					</li>
+					<li><ul>
+							<li>Defined in <a href="https://github.com/robertpanvip/attributes-observe/blob/cd9940a/src/AttrsObserver.ts#L223">AttrsObserver.ts:223</a></li>
+						</ul>
+						<p>解除观察</p>
+						<a href="#parameters-1" id="parameters-1" style="color: inherit; text-decoration: none;">
+							<h4>Parameters</h4>
+						</a>
+						<ul>
+							<li>
+								<a href="#target-htmlelement-1" id="target-htmlelement-1" style="color: inherit; text-decoration: none;">
+									<h5>target: HTMLElement</h5>
+								</a>
+								<p>目标对象</p>
+							</li>
+						</ul>
+						<a href="#returns-boolean" id="returns-boolean" style="color: inherit; text-decoration: none;">
+							<h4>Returns boolean</h4>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -90,7 +204,7 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class">
-						<a href="classes/attributesobserve.html" class="tsd-kind-icon">Attributes<wbr>Observe</a>
+						<a href="classes/attrsobserver.html" class="tsd-kind-icon">Attrs<wbr>Observer</a>
 					</li>
 				</ul>
 			</nav>

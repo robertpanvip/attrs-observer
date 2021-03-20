@@ -183,7 +183,7 @@ interface WeakMapConstructor {
     readonly prototype: WeakMap<object, any>;
 }
 
-export class AttributesObserve {
+export class AttrsObserver {
     private readonly targets = new _WeakMap();
 
     /**
@@ -196,7 +196,7 @@ export class AttributesObserve {
         target: HTMLElement,
         preHook: Hook,
         afterHook: Hook
-    ):AttributesObserve {
+    ):AttrsObserver {
         const {setProperty} = target.style;
         const {removeProperty} = target.style;
 

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {AttributesObserve} from "../src/AttributesObserve";
+import {AttrsObserver} from "../src/AttrsObserver";
 
 class Test extends React.PureComponent {
 
@@ -16,7 +16,7 @@ class Test extends React.PureComponent {
      */
     componentDidMount(){
         const target = this.ref.current;
-        const observer = new AttributesObserve();
+        const observer = new AttrsObserver();
         const observed = observer.observe(target,
             (target, from, to) => {
                 console.log(target, from, to)
