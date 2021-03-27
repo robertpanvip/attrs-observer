@@ -1,11 +1,15 @@
 📦 **Installation**
 ``` javascript
-npm install attributes-observe
+npm install attrs-observer
 ```
 🔨 **Usage**
 ``` javascript
+import AttrsObserver from 'attrs-observer'
+
 const target = document.querySelector('div')
+
 const observer = new AttrsObserver();
+
 observer.observe(target,
     (target, from, to) => {
         console.log(target, from, to)

@@ -183,7 +183,7 @@ interface WeakMapConstructor {
     readonly prototype: WeakMap<object, any>;
 }
 
-export class AttrsObserver {
+export default class AttrsObserver {
     private readonly targets = new _WeakMap();
 
     /**
