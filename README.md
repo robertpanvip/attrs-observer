@@ -4,20 +4,19 @@ npm install attributes-observe
 ```
 🔨 **Usage**
 ``` javascript
-const target=document.querySelector('div')
+const target = document.querySelector('div')
 const observer = new AttrsObserver();
 observer.observe(target,
-            (target, from, to) => {
-                console.log(target, from, to)
-            //如果这里返回true 属性就不会设置下去
-            },
-            (target, from, to) => {
-                console.log(target, from, to)
-            }
-        )
+    (target, from, to) => {
+        console.log(target, from, to)
+        //如果这里返回true 属性就不会设置下去
+    },
+    (target, from, to) => {
+        console.log(target, from, to)
+    }
+)
 //todo 这时候修改 style 或者calss 都会被检查到
 observer.unobserve(target)
-//todo 这时候修改 style 或者calss 就不会被检查到了
 ```
 🖥 **API**
 # Class AttrsObserver

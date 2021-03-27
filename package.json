@@ -1,8 +1,8 @@
 {
     "name": "attrs-observer",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Observe the DOM property change and injection condition to determine whether to modify the property",
-    "main": "dist/attrs-observer.min",
+    "main": "dist/attrs-observer.min.js",
     "module": "lib/AttrsObserver.js",
     "typings": "lib/AttrsObserver.d.ts",
     "scripts": {
