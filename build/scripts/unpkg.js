@@ -29,7 +29,7 @@ All rights reserved.
         output: {
             path: path.join(__dirname, '../../dist'),
             filename: name,
-            library: 'EnableTransition',
+            library: 'AttrsObserver',
             libraryTarget: 'umd'
         },
         resolve: {
@@ -112,10 +112,10 @@ module.exports =function(){
         done()
     });
     gulp.task('webpack', (done) => {
-        webpackCompile(false,'attributes-observe.js',done)
+        webpackCompile(false,'attrs-observer.js',done)
     });
     gulp.task('minimize', (done) => {
-        webpackCompile(true,'attributes-observe.min.js',done)
+        webpackCompile(true,'attrs-observer.min.js',done)
     });
     gulp.task(
         'unpkg',
